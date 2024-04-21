@@ -1,6 +1,6 @@
 package hw2;
 
-public class homework2 {
+public class Homework2 {
 	public static void main(String args[]){
 		System.out.println("====Question 1====");
 		int sum1 = 0;
