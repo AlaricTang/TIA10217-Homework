@@ -1,15 +1,11 @@
 package hw4;
 
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class Homework4_1 {
-	static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String args[]) {
 		int sum1=0,avg1;
 		int q1[] = {29,100,39,41,50,8,66,77,95,15};
-		Arrays.sort(q1);
 		for(int i=0;i<q1.length;i++) {
 			sum1 += q1[i]; 
 		}
