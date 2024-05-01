@@ -5,10 +5,9 @@ import java.util.Scanner;
 
 public class Homework3_3 {
 	public static void main(String args[]) {
-		int passNum=0;
-		int unlikeNum;
+		int passNum=0,count=0;
+		int unlikeNum,catchIndex;
 		int randomCount=0;
-		int catchIndex;
 		
 		Scanner sc = new Scanner(System.in);
 		int numbox[]=new int[49];//建立array
@@ -16,17 +15,20 @@ public class Homework3_3 {
 
 		System.out.println("輸入你不喜歡的數(1~9)");
 		unlikeNum = sc.nextInt();
-		
+		System.out.printf("你可以選擇以下數字:");
 		for(int num=1; num<=49;num++) { //numbox 放入Number
 			if((num%10)==unlikeNum || (num/10)==unlikeNum) { 
 				passNum++;
 				continue;
 			}
+			count++;
 			numbox[num-passNum-1]= num;
 //			numbox.add(num);
+			if((num-passNum)%6==1) System.out.println();
+			System.out.printf("%d\t",num);
 		}
 		
-
+		System.out.println("總共有"+count+"數可選\n可選數之隨機選6數:");
 		while(randomCount++ !=6) {
 			catchIndex = (int)(Math.random()*(48-passNum));//抓出我要的index,跟最後一個交換,print出來
 			System.out.print(numbox[catchIndex]+" ");
