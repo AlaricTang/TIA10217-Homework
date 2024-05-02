@@ -21,7 +21,6 @@ public class Homework3_3 {
 				passNum++;
 				continue;
 			}
-			count++;
 			numbox[num-passNum-1]= num;
 //			numbox.add(num);
 			if((num-passNum)%6==1) System.out.println();
