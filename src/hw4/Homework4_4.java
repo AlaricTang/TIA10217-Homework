@@ -10,6 +10,7 @@ public class Homework4_4 {
 		member d = new member(19,1000);
 		member e = new member(27,1200);
 		member coworker[]= {a,b,c,d,e};
+//		int coworker[][] = {{25,32,8,19,27},{2500,800,500,1000,1200}};  //二維方法
 		
 		System.out.println("輸入小華要借多少");
 		int borrow = sc.nextInt();
@@ -22,6 +23,12 @@ public class Homework4_4 {
 				howmany ++;
 			}
 		}
+//		for (int i=0; i < coworker[1].length; i++) {
+//	 		if (coworker[1][i] >= borrow) { 
+// 				System.out.print(coworker[0][i]+" ");
+//		 		howmany++;
+//		 	}
+//		 }
 		System.out.printf("共%d人!",howmany);
 		sc.close();
 	}
