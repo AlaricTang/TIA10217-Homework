@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Homework3_3 {
 	public static void main(String args[]) {
-		int passNum=0,count=0;
+		int passNum=0;
 		int unlikeNum,catchIndex;
 		int randomCount=0;
 		
@@ -28,7 +28,7 @@ public class Homework3_3 {
 			System.out.printf("%d\t",num);
 		}
 		
-		System.out.println("總共有"+count+"數可選\n可選數之隨機選6數:");
+		System.out.println("總共有"+(49-passNum)+"數可選\n可選數之隨機選6數:");
 		while(randomCount++ !=6) {
 			catchIndex = (int)(Math.random()*(48-passNum));//抓出我要的index,跟最後一個交換,print出來
 			System.out.print(numbox[catchIndex]+" ");
